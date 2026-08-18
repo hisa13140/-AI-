@@ -1,5 +1,6 @@
 import express from 'express';
 import path from 'path';
+import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
 import { handleGeminiGenerate, handleGeminiStream } from './src/server/geminiApi.ts';
 
@@ -15,6 +16,8 @@ app.post('/api/gemini/generate', handleGeminiGenerate);
 app.post('/api/gemini/stream', handleGeminiStream);
 
 // Serve static assets in production
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 const distPath = path.join(__dirname, 'dist');
 app.use(express.static(distPath));
 
