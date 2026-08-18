@@ -1,0 +1,6 @@
+{
+  "name": "EduSpark 智教星 - 教师AI全能工具箱",
+  "description": "专为中小学与幼儿园教师打造的智能AI教学工作台：智能教案与五大领域活动设计、分层试卷考题生成、作文作业深度批改、个性化学生评语库、幼儿观察与个案分析、班级环创、PPT课件大纲、家校沟通与随堂互动工具等全套教育提效工作台。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
